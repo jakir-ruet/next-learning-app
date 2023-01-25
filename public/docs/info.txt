@@ -1,5 +1,0 @@
-In .vscode for workspace
-{
-   "css.validate": false,
-   "tailwindCSS.emmetCompletions": true
-}
