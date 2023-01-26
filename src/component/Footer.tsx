@@ -5,6 +5,7 @@ import {
   faMobile,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
 function Footer() {
   return (
@@ -25,19 +26,29 @@ function Footer() {
               <h4>Useful Link</h4>
               <ul className="text-gray-500">
                 <li className="pb-4">
-                  <FontAwesomeIcon icon={faChevronRight} /> Home
+                  <Link href={'/'}>
+                    <FontAwesomeIcon icon={faChevronRight} /> Home
+                  </Link>
                 </li>
                 <li className="pb-4">
-                  <FontAwesomeIcon icon={faChevronRight} /> About Us
+                  <Link href={'/'}>
+                    <FontAwesomeIcon icon={faChevronRight} /> About Us
+                  </Link>
                 </li>
                 <li className="pb-4">
-                  <FontAwesomeIcon icon={faChevronRight} /> Services
+                  <Link href={'/'}>
+                    <FontAwesomeIcon icon={faChevronRight} /> Services
+                  </Link>
                 </li>
                 <li className="pb-4">
-                  <FontAwesomeIcon icon={faChevronRight} /> Term of Services
+                  <Link href={'/'}>
+                    <FontAwesomeIcon icon={faChevronRight} /> Term of Services
+                  </Link>
                 </li>
                 <li className="pb-4">
-                  <FontAwesomeIcon icon={faChevronRight} /> Privacy Policy
+                  <Link href={'/'}>
+                    <FontAwesomeIcon icon={faChevronRight} /> Privacy Policy
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -45,36 +56,53 @@ function Footer() {
               <h4>Our Services</h4>
               <ul className="text-gray-500">
                 <li className="pb-4">
-                  <FontAwesomeIcon icon={faChevronRight} /> Web Desingn
+                  <Link href={'/'}>
+                    <FontAwesomeIcon icon={faChevronRight} /> Web Desingn
+                  </Link>
                 </li>
                 <li className="pb-4">
-                  <FontAwesomeIcon icon={faChevronRight} /> Web Development
+                  <Link href={'/'}>
+                    <FontAwesomeIcon icon={faChevronRight} /> Web Development
+                  </Link>
                 </li>
                 <li className="pb-4">
-                  <FontAwesomeIcon icon={faChevronRight} /> Product Management
+                  <Link href={'/'}>
+                    <FontAwesomeIcon icon={faChevronRight} /> Product Management
+                  </Link>
                 </li>
                 <li className="pb-4">
-                  <FontAwesomeIcon icon={faChevronRight} /> Software Development
+                  <Link href={'/'}>
+                    <FontAwesomeIcon icon={faChevronRight} /> Software
+                    Development
+                  </Link>
                 </li>
                 <li className="pb-4">
-                  <FontAwesomeIcon icon={faChevronRight} /> Mobile Apps
-                  Development
+                  <Link href={'/'}>
+                    <FontAwesomeIcon icon={faChevronRight} /> Mobile Apps
+                    Development
+                  </Link>
                 </li>
               </ul>
             </div>
             <div className="mb-5">
               <h4>Contact</h4>
-              <p>
-                <FontAwesomeIcon icon={faMobile} /> 09834549329
-              </p>
-              <p>
-                <FontAwesomeIcon icon={faEnvelope} />
-                jakir.ruet@outlook.com
-              </p>
-              <p>
-                <FontAwesomeIcon icon={faGlobe} />
-                Alokar More, Ghoramara, Boalia, Rajshahi-6100
-              </p>
+              <ul className="text-gray-500">
+                <li className="pb-4">
+                  <Link href={'tel:09834549329'}>
+                    <FontAwesomeIcon icon={faMobile} /> 09834549329
+                  </Link>
+                </li>
+                <li className="pb-4">
+                  <Link href={'mailto:jakir.ruet@outlook.com'}>
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    jakir.ruet@outlook.com
+                  </Link>
+                </li>
+                <li className="pb-4">
+                  <FontAwesomeIcon icon={faGlobe} />
+                  Alokar More, Ghoramara, Boalia, Rajshahi-6100
+                </li>
+              </ul>
             </div>
           </div>
         </div>
